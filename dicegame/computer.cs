@@ -58,9 +58,12 @@ namespace dicegame
             int oyuncuzar2 = rnd1.Next(1, 7);
             int toplamOyuncu = oyuncuzar1 + oyuncuzar2;
 
-            zar1OyuncuTxt.Text = oyuncuzar1.ToString();
-            zar2OyuncuTxt.Text = oyuncuzar2.ToString();
-            toplamoynTxt.Text = toplamOyuncu.ToString();
+            dice1PlayerTxt.Text = oyuncuzar1.ToString();
+            dice2PlayerTxt.Text = oyuncuzar2.ToString();
+            totalPlayerTxt.Text = toplamOyuncu.ToString();
+            dice1PlayerTxt.Visible = true;
+            dice2PlayerTxt.Visible=true;
+            totalPlayerTxt.Visible = true;
 
             //first dice png
             if (oyuncuzar1 == 1)
@@ -90,16 +93,19 @@ namespace dicegame
                 dice2player6.Visible = true;
 
 
-            MessageBox.Show("Bilgisayar Bekleniyor...");
+            MessageBox.Show("Waiting PC...");
 
 
             int bilgisayarzar1 = rnd1.Next(1, 7);
             int bilgisayarzar2 = rnd1.Next(1, 7);
             int toplamBilgisayar = bilgisayarzar1 + bilgisayarzar2;
 
-            zar1BilgisayarTxt.Text = bilgisayarzar1.ToString();
-            zar2BilgisayarTxt.Text = bilgisayarzar2.ToString();
-            toplamBilgTxt.Text = toplamBilgisayar.ToString();
+            dice1PcTxt.Text = bilgisayarzar1.ToString();
+            dice2PcTxt.Text = bilgisayarzar2.ToString();
+            totalPcTxt.Text = toplamBilgisayar.ToString();
+            dice1PcTxt.Visible = true;
+            dice2PcTxt.Visible = true;
+            totalPcTxt.Visible = true;
 
             if (bilgisayarzar1 == 1)
                 dice1pc1.Visible = true;
@@ -129,12 +135,12 @@ namespace dicegame
 
             if (toplamOyuncu > toplamBilgisayar)
             {
-                MessageBox.Show("Oyuncu Kazandı! Tekrar oynamak için zar at tuşuna tıklayın.");
+                MessageBox.Show("Winner is Player! You can click on the roll dice button to play again.");
             }
 
             else
             {
-                MessageBox.Show("Bilgisayar Kazandı! Tekrar oynamak için zar at tuşuna tıklayın.");
+                MessageBox.Show("Winner is Player! You can click on the roll dice button to play again.");
             }
 
 

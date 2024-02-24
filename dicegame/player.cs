@@ -53,9 +53,13 @@ namespace dicegame
             oyuncu1zar2 = random.Next(1, 7);
             total = oyuncu1zar1 + oyuncu1zar2;
 
-            zar1oyuncu1Txt.Text = oyuncu1zar1.ToString();
-            zar2oyuncu1Txt.Text = oyuncu1zar2.ToString();
+            dice1player1Txt.Text = oyuncu1zar1.ToString();
+            dice2player1Txt.Text = oyuncu1zar2.ToString();
             totalvalue1txt.Text = total.ToString();
+            dice1player1Txt.Visible = true;
+            dice2player1Txt.Visible = true;
+            totalvalue1txt.Visible=true;
+
 
             // first dice png
             if (oyuncu1zar1 == 1)
@@ -101,9 +105,13 @@ namespace dicegame
             oyuncu2zar2 = random.Next(1, 7);
             total2 = oyuncu2zar1 + oyuncu2zar2;
 
-            zar1oyuncu2Txt.Text = oyuncu2zar1.ToString();
-            zar2oyuncu2Txt.Text = oyuncu2zar2.ToString();
+            dice1player2Txt.Text = oyuncu2zar1.ToString();
+            dice2player2Txt.Text = oyuncu2zar2.ToString();
             totalvalue2txt.Text = total2.ToString();
+            dice1player2Txt.Visible = true;
+            dice2player2Txt.Visible = true;
+            totalvalue2txt.Visible = true;
+
             // first dice png
             if (oyuncu2zar1 == 1)
                 dice1player21.Visible = true;
@@ -162,6 +170,11 @@ namespace dicegame
         private void button4_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void player_Load(object sender, EventArgs e)
+        {
+            sira2Txt.Visible=false;
         }
     }
 }

@@ -39,17 +39,17 @@
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
-            zar1OyuncuTxt = new Label();
-            zar2OyuncuTxt = new Label();
-            zar1BilgisayarTxt = new Label();
-            zar2BilgisayarTxt = new Label();
+            dice1PlayerTxt = new Label();
+            dice2PlayerTxt = new Label();
+            dice1PcTxt = new Label();
+            dice2PcTxt = new Label();
             button1 = new Button();
             button3 = new Button();
             timer1 = new System.Windows.Forms.Timer(components);
             label7 = new Label();
-            toplamoynTxt = new Label();
+            totalPlayerTxt = new Label();
             label8 = new Label();
-            toplamBilgTxt = new Label();
+            totalPcTxt = new Label();
             dice1player1 = new PictureBox();
             dice1pc1 = new PictureBox();
             dice2pc1 = new PictureBox();
@@ -201,49 +201,53 @@
             label6.TabIndex = 7;
             label6.Text = "Secon dice:";
             // 
-            // zar1OyuncuTxt
+            // dice1PlayerTxt
             // 
-            zar1OyuncuTxt.AutoSize = true;
-            zar1OyuncuTxt.Font = new Font("Cambria", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            zar1OyuncuTxt.ForeColor = Color.White;
-            zar1OyuncuTxt.Location = new Point(129, 116);
-            zar1OyuncuTxt.Name = "zar1OyuncuTxt";
-            zar1OyuncuTxt.Size = new Size(103, 21);
-            zar1OyuncuTxt.TabIndex = 8;
-            zar1OyuncuTxt.Text = "dice1value";
+            dice1PlayerTxt.AutoSize = true;
+            dice1PlayerTxt.Font = new Font("Cambria", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            dice1PlayerTxt.ForeColor = Color.White;
+            dice1PlayerTxt.Location = new Point(129, 116);
+            dice1PlayerTxt.Name = "dice1PlayerTxt";
+            dice1PlayerTxt.Size = new Size(103, 21);
+            dice1PlayerTxt.TabIndex = 8;
+            dice1PlayerTxt.Text = "dice1value";
+            dice1PlayerTxt.Visible = false;
             // 
-            // zar2OyuncuTxt
+            // dice2PlayerTxt
             // 
-            zar2OyuncuTxt.AutoSize = true;
-            zar2OyuncuTxt.Font = new Font("Cambria", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            zar2OyuncuTxt.ForeColor = Color.White;
-            zar2OyuncuTxt.Location = new Point(129, 157);
-            zar2OyuncuTxt.Name = "zar2OyuncuTxt";
-            zar2OyuncuTxt.Size = new Size(103, 21);
-            zar2OyuncuTxt.TabIndex = 9;
-            zar2OyuncuTxt.Text = "dice2value";
+            dice2PlayerTxt.AutoSize = true;
+            dice2PlayerTxt.Font = new Font("Cambria", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            dice2PlayerTxt.ForeColor = Color.White;
+            dice2PlayerTxt.Location = new Point(129, 157);
+            dice2PlayerTxt.Name = "dice2PlayerTxt";
+            dice2PlayerTxt.Size = new Size(103, 21);
+            dice2PlayerTxt.TabIndex = 9;
+            dice2PlayerTxt.Text = "dice2value";
+            dice2PlayerTxt.Visible = false;
             // 
-            // zar1BilgisayarTxt
+            // dice1PcTxt
             // 
-            zar1BilgisayarTxt.AutoSize = true;
-            zar1BilgisayarTxt.Font = new Font("Cambria", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            zar1BilgisayarTxt.ForeColor = Color.White;
-            zar1BilgisayarTxt.Location = new Point(442, 116);
-            zar1BilgisayarTxt.Name = "zar1BilgisayarTxt";
-            zar1BilgisayarTxt.Size = new Size(103, 21);
-            zar1BilgisayarTxt.TabIndex = 10;
-            zar1BilgisayarTxt.Text = "dice1value";
+            dice1PcTxt.AutoSize = true;
+            dice1PcTxt.Font = new Font("Cambria", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            dice1PcTxt.ForeColor = Color.White;
+            dice1PcTxt.Location = new Point(447, 116);
+            dice1PcTxt.Name = "dice1PcTxt";
+            dice1PcTxt.Size = new Size(103, 21);
+            dice1PcTxt.TabIndex = 10;
+            dice1PcTxt.Text = "dice1value";
+            dice1PcTxt.Visible = false;
             // 
-            // zar2BilgisayarTxt
+            // dice2PcTxt
             // 
-            zar2BilgisayarTxt.AutoSize = true;
-            zar2BilgisayarTxt.Font = new Font("Cambria", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            zar2BilgisayarTxt.ForeColor = Color.White;
-            zar2BilgisayarTxt.Location = new Point(447, 157);
-            zar2BilgisayarTxt.Name = "zar2BilgisayarTxt";
-            zar2BilgisayarTxt.Size = new Size(103, 21);
-            zar2BilgisayarTxt.TabIndex = 11;
-            zar2BilgisayarTxt.Text = "dice2value";
+            dice2PcTxt.AutoSize = true;
+            dice2PcTxt.Font = new Font("Cambria", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            dice2PcTxt.ForeColor = Color.White;
+            dice2PcTxt.Location = new Point(447, 157);
+            dice2PcTxt.Name = "dice2PcTxt";
+            dice2PcTxt.Size = new Size(103, 21);
+            dice2PcTxt.TabIndex = 11;
+            dice2PcTxt.Text = "dice2value";
+            dice2PcTxt.Visible = false;
             // 
             // button1
             // 
@@ -288,16 +292,17 @@
             label7.TabIndex = 15;
             label7.Text = "Total:";
             // 
-            // toplamoynTxt
+            // totalPlayerTxt
             // 
-            toplamoynTxt.AutoSize = true;
-            toplamoynTxt.Font = new Font("Cambria", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            toplamoynTxt.ForeColor = Color.White;
-            toplamoynTxt.Location = new Point(129, 195);
-            toplamoynTxt.Name = "toplamoynTxt";
-            toplamoynTxt.Size = new Size(97, 21);
-            toplamoynTxt.TabIndex = 16;
-            toplamoynTxt.Text = "totalvalue";
+            totalPlayerTxt.AutoSize = true;
+            totalPlayerTxt.Font = new Font("Cambria", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            totalPlayerTxt.ForeColor = Color.White;
+            totalPlayerTxt.Location = new Point(129, 195);
+            totalPlayerTxt.Name = "totalPlayerTxt";
+            totalPlayerTxt.Size = new Size(97, 21);
+            totalPlayerTxt.TabIndex = 16;
+            totalPlayerTxt.Text = "totalvalue";
+            totalPlayerTxt.Visible = false;
             // 
             // label8
             // 
@@ -310,16 +315,17 @@
             label8.TabIndex = 17;
             label8.Text = "Total:";
             // 
-            // toplamBilgTxt
+            // totalPcTxt
             // 
-            toplamBilgTxt.AutoSize = true;
-            toplamBilgTxt.Font = new Font("Cambria", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            toplamBilgTxt.ForeColor = Color.White;
-            toplamBilgTxt.Location = new Point(447, 195);
-            toplamBilgTxt.Name = "toplamBilgTxt";
-            toplamBilgTxt.Size = new Size(108, 21);
-            toplamBilgTxt.TabIndex = 18;
-            toplamBilgTxt.Text = "totalvalue2";
+            totalPcTxt.AutoSize = true;
+            totalPcTxt.Font = new Font("Cambria", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            totalPcTxt.ForeColor = Color.White;
+            totalPcTxt.Location = new Point(447, 195);
+            totalPcTxt.Name = "totalPcTxt";
+            totalPcTxt.Size = new Size(108, 21);
+            totalPcTxt.TabIndex = 18;
+            totalPcTxt.Text = "totalvalue2";
+            totalPcTxt.Visible = false;
             // 
             // dice1player1
             // 
@@ -615,16 +621,16 @@
             Controls.Add(dice2pc1);
             Controls.Add(dice1pc1);
             Controls.Add(dice1player1);
-            Controls.Add(toplamBilgTxt);
+            Controls.Add(totalPcTxt);
             Controls.Add(label8);
-            Controls.Add(toplamoynTxt);
+            Controls.Add(totalPlayerTxt);
             Controls.Add(label7);
             Controls.Add(button3);
             Controls.Add(button1);
-            Controls.Add(zar2BilgisayarTxt);
-            Controls.Add(zar1BilgisayarTxt);
-            Controls.Add(zar2OyuncuTxt);
-            Controls.Add(zar1OyuncuTxt);
+            Controls.Add(dice2PcTxt);
+            Controls.Add(dice1PcTxt);
+            Controls.Add(dice2PlayerTxt);
+            Controls.Add(dice1PlayerTxt);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -677,17 +683,17 @@
         private Label label4;
         private Label label5;
         private Label label6;
-        private Label zar1OyuncuTxt;
-        private Label zar2OyuncuTxt;
-        private Label zar1BilgisayarTxt;
-        private Label zar2BilgisayarTxt;
+        private Label dice1PlayerTxt;
+        private Label dice2PlayerTxt;
+        private Label dice1PcTxt;
+        private Label dice2PcTxt;
         private Button button1;
         private Button button3;
         private System.Windows.Forms.Timer timer1;
         private Label label7;
-        private Label toplamoynTxt;
+        private Label totalPlayerTxt;
         private Label label8;
-        private Label toplamBilgTxt;
+        private Label totalPcTxt;
         private PictureBox dice1player1;
         private PictureBox dice1pc1;
         private PictureBox dice2pc1;

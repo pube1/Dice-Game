@@ -38,10 +38,10 @@
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
-            zar1oyuncu1Txt = new Label();
-            zar2oyuncu1Txt = new Label();
-            zar1oyuncu2Txt = new Label();
-            zar2oyuncu2Txt = new Label();
+            dice1player1Txt = new Label();
+            dice2player1Txt = new Label();
+            dice1player2Txt = new Label();
+            dice2player2Txt = new Label();
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
@@ -202,49 +202,53 @@
             label6.TabIndex = 9;
             label6.Text = "Second Dice:";
             // 
-            // zar1oyuncu1Txt
+            // dice1player1Txt
             // 
-            zar1oyuncu1Txt.AutoSize = true;
-            zar1oyuncu1Txt.Font = new Font("Cambria", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            zar1oyuncu1Txt.ForeColor = Color.White;
-            zar1oyuncu1Txt.Location = new Point(133, 125);
-            zar1oyuncu1Txt.Name = "zar1oyuncu1Txt";
-            zar1oyuncu1Txt.Size = new Size(103, 21);
-            zar1oyuncu1Txt.TabIndex = 10;
-            zar1oyuncu1Txt.Text = "dice1value";
+            dice1player1Txt.AutoSize = true;
+            dice1player1Txt.Font = new Font("Cambria", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            dice1player1Txt.ForeColor = Color.White;
+            dice1player1Txt.Location = new Point(133, 125);
+            dice1player1Txt.Name = "dice1player1Txt";
+            dice1player1Txt.Size = new Size(103, 21);
+            dice1player1Txt.TabIndex = 10;
+            dice1player1Txt.Text = "dice1value";
+            dice1player1Txt.Visible = false;
             // 
-            // zar2oyuncu1Txt
+            // dice2player1Txt
             // 
-            zar2oyuncu1Txt.AutoSize = true;
-            zar2oyuncu1Txt.Font = new Font("Cambria", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            zar2oyuncu1Txt.ForeColor = Color.White;
-            zar2oyuncu1Txt.Location = new Point(133, 164);
-            zar2oyuncu1Txt.Name = "zar2oyuncu1Txt";
-            zar2oyuncu1Txt.Size = new Size(103, 21);
-            zar2oyuncu1Txt.TabIndex = 11;
-            zar2oyuncu1Txt.Text = "dice2value";
+            dice2player1Txt.AutoSize = true;
+            dice2player1Txt.Font = new Font("Cambria", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            dice2player1Txt.ForeColor = Color.White;
+            dice2player1Txt.Location = new Point(133, 164);
+            dice2player1Txt.Name = "dice2player1Txt";
+            dice2player1Txt.Size = new Size(103, 21);
+            dice2player1Txt.TabIndex = 11;
+            dice2player1Txt.Text = "dice2value";
+            dice2player1Txt.Visible = false;
             // 
-            // zar1oyuncu2Txt
+            // dice1player2Txt
             // 
-            zar1oyuncu2Txt.AutoSize = true;
-            zar1oyuncu2Txt.Font = new Font("Cambria", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            zar1oyuncu2Txt.ForeColor = Color.White;
-            zar1oyuncu2Txt.Location = new Point(452, 125);
-            zar1oyuncu2Txt.Name = "zar1oyuncu2Txt";
-            zar1oyuncu2Txt.Size = new Size(103, 21);
-            zar1oyuncu2Txt.TabIndex = 12;
-            zar1oyuncu2Txt.Text = "dice1value";
+            dice1player2Txt.AutoSize = true;
+            dice1player2Txt.Font = new Font("Cambria", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            dice1player2Txt.ForeColor = Color.White;
+            dice1player2Txt.Location = new Point(452, 125);
+            dice1player2Txt.Name = "dice1player2Txt";
+            dice1player2Txt.Size = new Size(103, 21);
+            dice1player2Txt.TabIndex = 12;
+            dice1player2Txt.Text = "dice1value";
+            dice1player2Txt.Visible = false;
             // 
-            // zar2oyuncu2Txt
+            // dice2player2Txt
             // 
-            zar2oyuncu2Txt.AutoSize = true;
-            zar2oyuncu2Txt.Font = new Font("Cambria", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            zar2oyuncu2Txt.ForeColor = Color.White;
-            zar2oyuncu2Txt.Location = new Point(457, 164);
-            zar2oyuncu2Txt.Name = "zar2oyuncu2Txt";
-            zar2oyuncu2Txt.Size = new Size(103, 21);
-            zar2oyuncu2Txt.TabIndex = 13;
-            zar2oyuncu2Txt.Text = "dice2value";
+            dice2player2Txt.AutoSize = true;
+            dice2player2Txt.Font = new Font("Cambria", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            dice2player2Txt.ForeColor = Color.White;
+            dice2player2Txt.Location = new Point(457, 164);
+            dice2player2Txt.Name = "dice2player2Txt";
+            dice2player2Txt.Size = new Size(103, 21);
+            dice2player2Txt.TabIndex = 13;
+            dice2player2Txt.Text = "dice2value";
+            dice2player2Txt.Visible = false;
             // 
             // button1
             // 
@@ -573,6 +577,7 @@
             totalvalue1txt.Size = new Size(108, 21);
             totalvalue1txt.TabIndex = 47;
             totalvalue1txt.Text = "totalvalue1";
+            totalvalue1txt.Visible = false;
             // 
             // label9
             // 
@@ -595,6 +600,7 @@
             totalvalue2txt.Size = new Size(108, 21);
             totalvalue2txt.TabIndex = 49;
             totalvalue2txt.Text = "totalvalue2";
+            totalvalue2txt.Visible = false;
             // 
             // sira1Txt
             // 
@@ -657,10 +663,10 @@
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
-            Controls.Add(zar2oyuncu2Txt);
-            Controls.Add(zar1oyuncu2Txt);
-            Controls.Add(zar2oyuncu1Txt);
-            Controls.Add(zar1oyuncu1Txt);
+            Controls.Add(dice2player2Txt);
+            Controls.Add(dice1player2Txt);
+            Controls.Add(dice2player1Txt);
+            Controls.Add(dice1player1Txt);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -674,6 +680,7 @@
             Name = "player";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "player";
+            Load += player_Load;
             panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dice1player11).EndInit();
             ((System.ComponentModel.ISupportInitialize)dice2player11).EndInit();
@@ -713,10 +720,10 @@
         private Label label4;
         private Label label5;
         private Label label6;
-        private Label zar1oyuncu1Txt;
-        private Label zar2oyuncu1Txt;
-        private Label zar1oyuncu2Txt;
-        private Label zar2oyuncu2Txt;
+        private Label dice1player1Txt;
+        private Label dice2player1Txt;
+        private Label dice1player2Txt;
+        private Label dice2player2Txt;
         private Button button1;
         private Button button2;
         private Button button3;
